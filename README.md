@@ -112,6 +112,16 @@ To test
 ./vendor/bin/phpunit tests/
 ```
 
+in GitHub `Project / Settings / Services / Add Packagist`
+
+```bash
+User: rozdol
+Token: https://packagist.org/profile/ -> Your API Token
+Domain: https://packagist.org
+Active: true
+Add Service: click
+```
+
 ### Travis CI
 
 ```bash
@@ -119,6 +129,20 @@ git checkout -b travis
 git add .travis.yml
 git push origin travis
 ```
+
+
+
+in GitHub `Project / Settings / Services / Add Packagist`
+
+```bash
+User: rozdol
+Token: https://travis-ci.org/profile/rozdol -> Copy API Token
+Domain: notify.travis-ci.org
+Active: true
+Add Service: click
+```
+
+[Got to Travis](https://travis-ci.org/) Press + , swipe activation
 
 ##### Detactach from original source
 
