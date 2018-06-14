@@ -54,21 +54,25 @@ git remote add origin git@github.com:rozdol/dates.git
 git push origin master
 ```
 
-- Login to [packagist.org](https://packagist.org/)
-- Submit `https://github.com/rozdol/dates`
 - on github add new release (v1.0.0)
 - On packagist Update Package
+- Login to [packagist.org](https://packagist.org/)
+- Submit `https://github.com/rozdol/dates`
 
-cd to dates
+### Ready to use in project
+
+cd to `your_project_root_dir`
 
 ```bash
 composer require rozdol/dates:"v1.*"
 ```
 
-in Table
+in Table or Model or Controller
 
 ```php
-use Rozdol\Funcs\Test;
+use Rozdol\Dates\Dates;
+$this->dates = new Dates();
+$date_normalized = $this->dates->F_date('01/01/20', 1); // 01.01.2020
 ```
 
 
