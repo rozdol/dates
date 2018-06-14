@@ -40,36 +40,11 @@ To test
 ## Compose library Tutorial
 
 ```bash
-mkdir dates
 cd dates
-composer init # or composer update
+composer update
 git init
-git add composer.json
-git commit -m 'Initial Composer'
-mkdir src
-```
-
-Copy `src`
-
-```bash
-git add src
-git commit -m 'Added initial source'
-```
-
-add to `composer.json`
-
-```
-	"autoload": {
-        "psr-4": {
-            "Rozdol\\": "src"
-        }
-    }
-```
-
-```bash
-git add composer.json
-git commit -m 'add autoloader'
-git push origin master
+git .
+git commit -m 'Initial commit'
 ```
 
 Create github repo
